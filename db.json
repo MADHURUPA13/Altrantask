@@ -1,0 +1,82 @@
+{
+  "emaillist": [
+    {
+      "id": 1,
+      "emailName": "madhurupa1@gmail.com"
+    },
+    {
+      "id": 2,
+      "emailName": "madhurupa2@gmail.com"
+    },
+    {
+      "id": 3,
+      "emailName": "madhurupa3@gmail.com"
+    },
+    {
+      "id": 4,
+      "emailName": "madhurupa4@gmail.com"
+    },
+    {
+      "id": 5,
+      "emailName": "madhurupa5@gmail.com"
+    },
+    {
+      "id": 6,
+      "emailName": "madhurupa6@gmail.com"
+    },
+    {
+      "id": 7,
+      "emailName": "madhurupa7@gmail.com"
+    },
+    {
+      "id": 8,
+      "emailName": "madhurupa8@gmail.com"
+    },
+    {
+      "id": 9,
+      "emailName": "madhurupa9@gmail.com"
+    },
+    {
+      "id": 10,
+      "emailName": "madhurupa10@gmail.com"
+    },
+    {
+      "id": 11,
+      "emailName": "madhurupa11@gmail.com"
+    },
+    {
+      "id": 12,
+      "emailName": "madhurupa12@gmail.com"
+    }
+  ],
+  "countrydata": [
+    {
+      "id": 1,
+      "countryName": "India",
+      "statedata": [
+        {
+          "id1": 1,
+          "stateName": "Ap"
+        },
+        {
+          "id1": 2,
+          "stateName": "Telangana"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "countryName": "Canada",
+      "statedata": [
+        {
+          "id1": 1,
+          "stateName": "Acadia"
+        },
+        {
+          "id1": 2,
+          "stateName": "Bighorn"
+        }
+      ]
+    }
+  ]
+}

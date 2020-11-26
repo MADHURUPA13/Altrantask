@@ -1,0 +1,67 @@
+<div class="jumbotron  col-6  mt-5">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Add The Multiple Emails</h5>
+              <input type="checkbox" (change)="selectallfun($event)"> <span class="col-2">Select All the Emails</span>
+              <div *ngFor="let de of gettingdata">
+                <p>
+                  <input (change)="onChangeEmail($event,de)" [checked]="de.flag"  type="checkbox"> <span class="col-2">{{de.emailName}}</span>
+                </p>
+                </div> 
+          <button type="submit" class="btn btn-sm mb-3 ml-5" style="background-color: #fc7b03; color: white;" (click)="Savecheckeddata()">Save Email
+            Data</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Submitted Email Data</h5>
+        <div *ngFor="let c of emailListObject">
+          {{c.emailName}}
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron col-6">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Country's along with States</h5>
+    <div class="row">
+      <div class="col-3">
+        <select (change)="selectedCountry($event.target.value)"  >
+          <option value="" >Select Country</option>
+          <option *ngFor="let c of countryjsondata" value="{{c.id}}" >{{c.countryName}}</option>
+          </select>
+      </div>
+      <div class="col-3">
+        <select>
+          <option value="" >Select state</option>
+          <option  *ngFor="let d of statearrayyyyy">{{d.stateName}}</option>
+          </select>
+          
+      </div>
+      
+    </div>
+
+    </div>
+  </div>
+</div>
+<div class="jumbotron">
+<div class="row">
+  <div class="container">
+      <a href="#" title="Dismissible popover" data-toggle="popover" data-trigger="focus" 
+      data-content="Click anywhere in the document to close this popover">Click me</a>
+       <a href="#" title="Header" data-toggle="popover" data-trigger="focus"
+        data-placement="top" data-content="Content">Top</a>
+  </div>
+  
+
+</div>
+</div>
+<router-outlet></router-outlet>
